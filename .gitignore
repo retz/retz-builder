@@ -1,0 +1,4 @@
+jdk*.gz
+*.rpm
+*.deb
+*.jar
