@@ -2,7 +2,7 @@
 
 set -e
 
-JDK_BALL=$1/jdk-8u141-linux-x64.tar.gz
+JDK_BALL=$1/jdk-8u151-linux-x64.tar.gz
 VERSION=$2
 
 
@@ -11,7 +11,7 @@ if [ -f $JDK_BALL ] ; then
     cp $JDK_BALL .
 else
     echo "Path to JDK '$JDK_BALL' is invalid."
-    echo "Usage: build.sh  path/to/jdk-8u141-linux-x64.tar.gz  0.0.13"
+    echo "Usage: build.sh  path/to/jdk-8u151-linux-x64.tar.gz  0.0.13"
     exit 23
 fi
 

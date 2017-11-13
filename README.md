@@ -11,9 +11,9 @@ Retz release package build toolchain, which builds
 Build packages
 
 ```sh
-$ ls path/to/jdk-8u141-linux-x64/
-jdk-8u141-linux-x64.tar.gz
-$ ./build.sh path/to/jdk-8u141-linux-x64/ 0.4.0
+$ ls path/to/jdk-8u151-linux-x64/
+jdk-8u151-linux-x64.tar.gz
+$ ./build.sh path/to/jdk-8u151-linux-x64/ 0.4.0
 ```
 
 Clean up intermediate files

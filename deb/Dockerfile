@@ -4,7 +4,7 @@ ENV container docker
 
 RUN apt-get update
 RUN apt-get -y install make git systemd
-COPY jdk-8u141-linux-x64.tar.gz /build/jdk-8u141-linux-x64.tar.gz
+COPY jdk-8u151-linux-x64.tar.gz /build/jdk-8u151-linux-x64.tar.gz
 
 # cf. Running systemd within a Docker Container – Red Hat Developer Blog
 #   http://developers.redhat.com/blog/2014/05/05/running-systemd-within-docker-container/
@@ -17,11 +17,11 @@ rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
 rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 
-RUN tar xzf /build/jdk-8u141-linux-x64.tar.gz -C /
+RUN tar xzf /build/jdk-8u151-linux-x64.tar.gz -C /
 RUN git clone git://github.com/retz/retz
 
-ENV JAVA_HOME /jdk1.8.0_141
-ENV PATH /jdk1.8.0_141/bin:$PATH
+ENV JAVA_HOME /jdk1.8.0_151
+ENV PATH /jdk1.8.0_151/bin:$PATH
 
 WORKDIR /retz
 RUN ./gradlew jar
